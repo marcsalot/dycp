@@ -48,7 +48,6 @@ export default function Footer() {
                 { href: '/about', label: 'About Us' },
                 { href: '/programs', label: 'Our Programs' },
                 { href: '/donate', label: 'Donate' },
-                { href: '/news', label: 'News & Updates' },
                 { href: '/contact', label: 'Contact Us' },
               ].map((link) => (
                 <li key={link.href}>
