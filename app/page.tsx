@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { getAllPosts } from '@/lib/posts'
 
 const programs = [
   {
@@ -59,9 +58,7 @@ const stats = [
   { value: '5+', label: 'Years of Impact' },
 ]
 
-export default async function HomePage() {
-  const posts = getAllPosts().slice(0, 3)
-
+export default function HomePage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────────── */}
@@ -290,69 +287,6 @@ export default async function HomePage() {
           </Link>
         </div>
       </section>
-
-      {/* ── NEWS PREVIEW ─────────────────────────────────────── */}
-      {posts.length > 0 && (
-        <section className="bg-cream py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-14">
-              <p className="text-gold tracking-[0.25em] uppercase text-xs font-medium mb-3">
-                Stay Informed
-              </p>
-              <h2 className="section-title text-navy">Latest News</h2>
-              <div className="gold-divider" />
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {posts.map((post) => (
-                <Link
-                  key={post.slug}
-                  href={`/news/${post.slug}`}
-                  className="bg-white rounded-lg overflow-hidden shadow hover:shadow-xl transition-all duration-300 group hover:-translate-y-1"
-                >
-                  {/* Cover image */}
-                  <div
-                    className="h-48 bg-navy-light"
-                    style={
-                      post.coverImage
-                        ? {
-                            backgroundImage: `url('${post.coverImage}')`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                          }
-                        : undefined
-                    }
-                  />
-                  <div className="p-6">
-                    <p className="text-gold text-xs uppercase tracking-widest mb-2">
-                      {new Date(post.date).toLocaleDateString('en-US', {
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric',
-                      })}
-                    </p>
-                    <h3 className="font-serif text-lg font-bold text-navy mb-3 group-hover:text-navy-light transition-colors">
-                      {post.title}
-                    </h3>
-                    <p className="text-gray-500 text-sm leading-relaxed line-clamp-3">
-                      {post.excerpt}
-                    </p>
-                    <span className="inline-block mt-4 text-gold text-sm font-medium group-hover:underline">
-                      Read More →
-                    </span>
-                  </div>
-                </Link>
-              ))}
-            </div>
-
-            <div className="text-center mt-12">
-              <Link href="/news" className="btn-outline-gold">
-                View All News
-              </Link>
-            </div>
-          </div>
-        </section>
-      )}
     </>
   )
 }
