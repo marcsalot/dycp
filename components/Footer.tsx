@@ -7,10 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <div className="font-serif text-gold text-3xl font-bold mb-1">NMB</div>
-            <p className="text-white/50 text-xs tracking-widest uppercase mb-4">
-              Nadya's Music Bridge
-            </p>
+            <div className="font-serif text-gold text-2xl font-bold mb-4">Nadya's Music Bridge</div>
             <p className="text-white/70 text-sm leading-relaxed mb-6">
               Bridging the gap in music education by giving underprivileged children
               in Dallas the gift of classical music — completely free.
