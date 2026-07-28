@@ -63,10 +63,10 @@ export default function ContactPage() {
                   <div>
                     <p className="font-semibold text-navy text-sm mb-1">Email</p>
                     <a
-                      href="mailto:info@dallasyoungcellistproject.org"
-                      className="text-gray-600 text-sm hover:text-gold transition-colors"
-                    >
-                      info@dallasyoungcellistproject.org
+                  href="mailto:info@dycp.org"
+                  className="text-gray-600 text-sm hover:text-gold transition-colors"
+                >
+                  info@dycp.org
                     </a>
                   </div>
                 </div>

@@ -70,10 +70,10 @@ export default function Footer() {
               <p>Dallas, Texas</p>
               {/* Update email once confirmed */}
               <a
-                href="mailto:info@dallasyoungcellistproject.org"
+                href="mailto:info@dycp.org"
                 className="block hover:text-gold transition-colors"
               >
-                info@dallasyoungcellistproject.org
+                info@dycp.org
               </a>
             </div>
             <div className="mt-6">
