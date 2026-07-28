@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Programs',
   description:
-    'Discover all DYCP programs: free cello lessons, instrument loans, competition workshops, and performance opportunities for Dallas children.',
+    'Discover all NMB programs: free cello lessons, instrument loans, competition workshops, and performance opportunities for Dallas children.',
 }
 
 const programs = [
@@ -13,7 +13,7 @@ const programs = [
     title: 'Cello Lessons',
     tagline: 'Free weekly instruction for every level',
     description: [
-      'Every DYCP student receives free, structured weekly cello lessons regardless of their prior experience. Our instructors — a dedicated team of local high school cellists and professional musicians — create individualized lesson plans that meet each student where they are.',
+      'Every NMB student receives free, structured weekly cello lessons regardless of their prior experience. Our instructors — a dedicated team of local high school cellists and professional musicians — create individualized lesson plans that meet each student where they are.',
       'From learning how to hold a bow for the very first time to preparing competition repertoire, every lesson is designed to build technical skill, musical understanding, and a genuine love for the instrument.',
     ],
     image: '/images/programs-lessons.jpg',
@@ -25,7 +25,7 @@ const programs = [
     title: 'Instrument Loans',
     tagline: 'Every child gets the tools they need',
     description: [
-      'The cost of a cello — even a student-grade instrument — can be a significant financial barrier for many families. DYCP eliminates this obstacle entirely by providing loaner cellos, bows, strings, rosin, and all necessary accessories to every participant at no cost.',
+      'The cost of a cello — even a student-grade instrument — can be a significant financial barrier for many families. NMB eliminates this obstacle entirely by providing loaner cellos, bows, strings, rosin, and all necessary accessories to every participant at no cost.',
       'Instruments are maintained and regularly serviced so that students are always playing on equipment that supports their growth. When a student outgrows their instrument, they are fitted with the next size up automatically.',
     ],
     image: '/images/programs-instruments.jpg',
@@ -37,8 +37,8 @@ const programs = [
     title: 'Competition Workshops',
     tagline: 'Expert preparation for UIL & beyond',
     description: [
-      'DYCP organizes intensive workshops specifically timed to help students prepare for UIL competitions, all-city, all-region, and all-state auditions. These workshops cover audition repertoire, sight-reading skills, performance practice, and mental preparation.',
-      'Led by professional musicians with extensive competition and audition experience, these sessions give DYCP students the tools and confidence to compete alongside students from much more resourced programs — and excel.',
+      'NMB organizes intensive workshops specifically timed to help students prepare for UIL competitions, all-city, all-region, and all-state auditions. These workshops cover audition repertoire, sight-reading skills, performance practice, and mental preparation.',
+      'Led by professional musicians with extensive competition and audition experience, these sessions give NMB students the tools and confidence to compete alongside students from much more resourced programs — and excel.',
     ],
     image: '/images/programs-ensemble.jpg',
     highlights: ['UIL, all-city, all-region, all-state preparation', 'Sight-reading clinics', 'Mock audition sessions', 'Performance anxiety strategies'],
@@ -49,7 +49,7 @@ const programs = [
     title: 'Performance Opportunities',
     tagline: 'Building confidence on every stage',
     description: [
-      'DYCP believes strongly in the power of performance. Beyond the practice room, students are regularly invited to perform at community events, school showcases, and seasonal recitals. These experiences build stage presence, ensemble awareness, and the immense pride that comes from sharing music publicly.',
+      'NMB believes strongly in the power of performance. Beyond the practice room, students are regularly invited to perform at community events, school showcases, and seasonal recitals. These experiences build stage presence, ensemble awareness, and the immense pride that comes from sharing music publicly.',
       'We also organize opportunities for students to attend top-level professional concerts — exposing them to the highest level of cello playing and inspiring them to envision their own musical futures.',
     ],
     image: '/images/programs-performance.jpg',

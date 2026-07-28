@@ -95,7 +95,7 @@ export default async function PostPage({ params }: Props) {
       <section className="bg-navy py-14 text-center">
         <div className="max-w-2xl mx-auto px-4">
           <h2 className="font-serif text-2xl font-bold text-white mb-3">
-            Support the Dallas Young Cellist Project
+            Support the Nadya's Music Bridge
           </h2>
           <p className="text-white/70 text-sm mb-7">
             Stories like this are only possible because of generous donors like you.

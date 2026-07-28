@@ -77,7 +77,7 @@ export default async function HomePage() {
       >
         <div className="relative z-10 text-center max-w-4xl mx-auto px-6 pt-20">
           <p className="text-gold tracking-[0.35em] uppercase text-xs sm:text-sm font-medium mb-6">
-            Dallas Young Cellist Project
+            Nadya's Music Bridge
           </p>
           <h1 className="font-serif font-bold text-5xl sm:text-6xl md:text-7xl leading-tight mb-6">
             Music Has the Power<br className="hidden sm:block" /> to Transform Lives
@@ -179,7 +179,7 @@ export default async function HomePage() {
               <p className="text-white/75 leading-relaxed mb-5">
                 Access to quality music education can often be limited by socio-economic
                 factors, leaving many talented children unable to pursue their musical
-                potential. The Dallas Young Cellist Project bridges this gap.
+                potential. The Nadya's Music Bridge bridges this gap.
               </p>
               <p className="text-white/75 leading-relaxed mb-10">
                 Through free lessons, loaner instruments, workshop preparation, and

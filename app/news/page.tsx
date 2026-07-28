@@ -5,7 +5,7 @@ import { getAllPosts } from '@/lib/posts'
 export const metadata: Metadata = {
   title: 'News & Updates',
   description:
-    'Stay up to date with the latest news, events, and stories from the Dallas Young Cellist Project.',
+    "Stay up to date with the latest news, events, and stories from the Nadya's Music Bridge.",
 }
 
 export default function NewsPage() {
@@ -31,7 +31,7 @@ export default function NewsPage() {
           <h1 className="section-title text-white text-5xl md:text-6xl mb-6">News &amp; Updates</h1>
           <div className="w-16 h-px bg-gold mb-6" />
           <p className="text-white/75 max-w-xl text-lg leading-relaxed">
-            Stories, announcements, and milestones from the DYCP community.
+            Stories, announcements, and milestones from the NMB community.
           </p>
         </div>
       </section>

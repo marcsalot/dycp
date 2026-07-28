@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Donate',
   description:
-    'Support the Dallas Young Cellist Project. Your donation provides free cello lessons, instruments, and performance opportunities to underprivileged children in Dallas.',
+    "Support the Nadya's Music Bridge. Your donation provides free cello lessons, instruments, and performance opportunities to underprivileged children in Dallas.",
 }
 
 const uses = [
@@ -84,12 +84,12 @@ export default function DonatePage() {
               <h2 className="section-title text-navy mb-2">Your Impact</h2>
               <div className="gold-divider-left" />
               <p className="text-gray-600 leading-relaxed mb-6 text-sm">
-                The Dallas Young Cellist Project is run almost entirely by volunteers, which
+                The Nadya's Music Bridge is run almost entirely by volunteers, which
                 means your donation goes directly where it&apos;s needed most: instruments,
                 instruction, and opportunities for children.
               </p>
               <p className="text-gray-600 leading-relaxed mb-8 text-sm">
-                DYCP is a 501(c)(3) nonprofit organization. All donations are
+                NMB is a 501(c)(3) nonprofit organization. All donations are
                 tax-deductible to the extent allowed by law.
               </p>
 
@@ -198,7 +198,7 @@ export default function DonatePage() {
                 title: 'Spread the Word',
                 description:
                   'Share our mission on social media, tell your friends, or nominate a child who would benefit from our programs.',
-                cta: 'Share DYCP',
+                cta: 'Share NMB',
                 href: '/contact',
               },
             ].map((item) => (

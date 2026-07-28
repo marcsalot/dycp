@@ -7,9 +7,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <div className="font-serif text-gold text-3xl font-bold mb-1">DYCP</div>
+            <div className="font-serif text-gold text-3xl font-bold mb-1">NMB</div>
             <p className="text-white/50 text-xs tracking-widest uppercase mb-4">
-              Dallas Young Cellist Project
+              Nadya's Music Bridge
             </p>
             <p className="text-white/70 text-sm leading-relaxed mb-6">
               Bridging the gap in music education by giving underprivileged children
@@ -86,7 +86,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 mt-14 pt-8 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-white/30 text-sm">
-            © {new Date().getFullYear()} Dallas Young Cellist Project. All rights reserved.
+            © {new Date().getFullYear()} Nadya's Music Bridge. All rights reserved.
           </p>
           <p className="text-white/30 text-xs">A 501(c)(3) nonprofit organization</p>
         </div>

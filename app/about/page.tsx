@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'About Us',
   description:
-    'Learn about the Dallas Young Cellist Project — our mission, methodology, and the dedicated team bringing free cello education to Dallas children.',
+    "Learn about the Nadya's Music Bridge — our mission, methodology, and the dedicated team bringing free cello education to Dallas children.",
 }
 
 const objectives = [
@@ -75,7 +75,7 @@ export default function AboutPage() {
           <p className="text-gold tracking-[0.3em] uppercase text-xs font-medium mb-4">
             Who We Are
           </p>
-          <h1 className="section-title text-white text-5xl md:text-6xl mb-6">About DYCP</h1>
+          <h1 className="section-title text-white text-5xl md:text-6xl mb-6">About NMB</h1>
           <div className="w-16 h-px bg-gold mb-6" />
           <p className="text-white/75 max-w-2xl text-lg leading-relaxed">
             A dedicated charity initiative bringing the transformative power of cello
@@ -99,11 +99,11 @@ export default function AboutPage() {
               <p className="text-gray-600 leading-relaxed mb-5">
                 Access to quality music education can often be limited by socio-economic
                 factors, leaving many talented children unable to pursue their musical
-                potential. The Dallas Young Cellist Project was founded to bridge this gap.
+                potential. The Nadya's Music Bridge was founded to bridge this gap.
               </p>
               <p className="text-gray-600 leading-relaxed mb-5">
                 By providing free lessons, instrument rentals, strings, and access to
-                experienced instructors, DYCP gives every child — regardless of their
+                experienced instructors, NMB gives every child — regardless of their
                 family&apos;s financial situation — the opportunity to discover and develop
                 their musical gifts.
               </p>
@@ -201,7 +201,7 @@ export default function AboutPage() {
             <h2 className="section-title text-white mb-2">Future Plans</h2>
             <div className="gold-divider-left" />
             <p className="text-white/70 leading-relaxed mb-10">
-              DYCP is committed to expanding its reach and impact across the Dallas–Fort Worth area.
+              NMB is committed to expanding its reach and impact across the Dallas–Fort Worth area.
             </p>
 
             <div className="space-y-6">

@@ -4,7 +4,7 @@ import ContactForm from '@/components/ContactForm'
 export const metadata: Metadata = {
   title: 'Contact Us',
   description:
-    'Get in touch with the Dallas Young Cellist Project — enroll a child, volunteer, donate an instrument, or just say hello.',
+    "Get in touch with the Nadya's Music Bridge — enroll a child, volunteer, donate an instrument, or just say hello.",
 }
 
 export default function ContactPage() {
@@ -93,7 +93,7 @@ export default function ContactPage() {
                     { label: 'Enroll a child in our programs', subject: 'Enroll a Child' },
                     { label: 'Volunteer as an instructor', subject: 'Volunteer as an Instructor' },
                     { label: 'Donate an instrument', subject: 'Donate an Instrument' },
-                    { label: 'Partner with DYCP', subject: 'Partnership / Sponsorship' },
+                    { label: 'Partner with NMB', subject: 'Partnership / Sponsorship' },
                   ].map((item) => (
                     <li key={item.label} className="flex items-center gap-2">
                       <div className="w-1 h-1 rounded-full bg-gold flex-shrink-0" />

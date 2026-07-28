@@ -39,10 +39,10 @@ export default function Nav() {
           <Link href="/" className="flex-shrink-0 group">
             <div className="flex flex-col leading-none">
               <span className="font-serif text-gold text-2xl font-bold group-hover:text-gold-light transition-colors">
-                DYCP
+                NMB
               </span>
               <span className="text-white/80 text-[10px] tracking-[0.2em] uppercase">
-                Dallas Young Cellist Project
+                Nadya's Music Bridge
               </span>
             </div>
           </Link>

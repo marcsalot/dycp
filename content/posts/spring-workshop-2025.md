@@ -1,10 +1,10 @@
 ---
 title: "Spring UIL Workshop Recap — A Triumphant Day for Our Students"
 date: "2025-03-20"
-excerpt: "This spring, DYCP held its first UIL preparation workshop — and the results were extraordinary. Students who had never performed in a formal setting walked away with confidence, skill, and smiles."
+excerpt: "This spring, NMB held its first UIL preparation workshop — and the results were extraordinary. Students who had never performed in a formal setting walked away with confidence, skill, and smiles."
 ---
 
-This spring, the Dallas Young Cellist Project held its inaugural **UIL preparation workshop**, and the results were extraordinary.
+This spring, the Nadya's Music Bridge held its inaugural **UIL preparation workshop**, and the results were extraordinary.
 
 ## A Room Full of Rising Stars
 
@@ -21,7 +21,7 @@ The curriculum covered:
 
 Of the twelve students who participated, **nine went on to perform in their school's UIL competition** — a remarkable achievement for a group with limited prior experience. Three students earned superior ratings, and one, 13-year-old Maria, placed in the top five of her division.
 
-> "I never thought I could do something like this," Maria told us afterward. "DYCP gave me the cello, the lessons, *and* the workshop. I didn't have to worry about anything except playing my best."
+> "I never thought I could do something like this," Maria told us afterward. "NMB gave me the cello, the lessons, *and* the workshop. I didn't have to worry about anything except playing my best."
 
 ## What's Next
 

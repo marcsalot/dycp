@@ -1,6 +1,6 @@
-# Dallas Young Cellist Project — Website
+# Nadya's Music Bridge — Website
 
-A beautiful, mobile-first charity website for the Dallas Young Cellist Project (DYCP).
+A beautiful, mobile-first charity website for the Nadya's Music Bridge (NMB).
 
 **Stack:** Next.js 14 · Tailwind CSS · Decap CMS · Netlify (free hosting)
 
@@ -41,7 +41,7 @@ See `public/images/README.md` for full details and descriptions.
 ```bash
 git init
 git add .
-git commit -m "Initial commit — DYCP website"
+git commit -m "Initial commit — NMB website"
 gh repo create dycp-website --public --source=. --push
 # Or use github.com to create the repo and follow the instructions
 ```
