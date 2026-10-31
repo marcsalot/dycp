@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { getPageContent } from '@/lib/pages'
 
 export const metadata: Metadata = {
   title: 'Donate',
@@ -46,6 +47,11 @@ const uses = [
 ]
 
 export default function DonatePage() {
+  const cms = getPageContent('donate')
+  const heroSubtitle = (cms.heroSubtitle as string) ?? "Every gift — of any size — puts a bow in a child's hand and opens a door to a lifetime of music."
+  const impactParagraph1 = (cms.impactParagraph1 as string) ?? ''
+  const impactParagraph2 = (cms.impactParagraph2 as string) ?? ''
+
   return (
     <>
       {/* ── PAGE HERO ─────────────────────────────────────────── */}
@@ -65,10 +71,7 @@ export default function DonatePage() {
           </p>
           <h1 className="section-title text-white text-5xl md:text-6xl mb-6">Donate</h1>
           <div className="w-16 h-px bg-gold mb-6" />
-          <p className="text-white/75 max-w-2xl text-lg leading-relaxed">
-            Every gift — of any size — puts a bow in a child&apos;s hand and opens a door
-            to a lifetime of music.
-          </p>
+          <p className="text-white/75 max-w-2xl text-lg leading-relaxed">{heroSubtitle}</p>
         </div>
       </section>
 
@@ -83,15 +86,8 @@ export default function DonatePage() {
               </p>
               <h2 className="section-title text-navy mb-2">Your Impact</h2>
               <div className="gold-divider-left" />
-              <p className="text-gray-600 leading-relaxed mb-6 text-sm">
-                The Nadya's Music Bridge is run almost entirely by volunteers, which
-                means your donation goes directly where it&apos;s needed most: instruments,
-                instruction, and opportunities for children.
-              </p>
-              <p className="text-gray-600 leading-relaxed mb-8 text-sm">
-                NMB is a 501(c)(3) nonprofit organization. All donations are
-                tax-deductible to the extent allowed by law.
-              </p>
+              <p className="text-gray-600 leading-relaxed mb-6 text-sm">{impactParagraph1}</p>
+              <p className="text-gray-600 leading-relaxed mb-8 text-sm">{impactParagraph2}</p>
 
               <div className="space-y-5">
                 {uses.map((use) => (

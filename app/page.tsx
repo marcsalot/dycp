@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { getPageContent } from '@/lib/pages'
 
 const programs = [
   {
@@ -51,7 +52,7 @@ const programs = [
   },
 ]
 
-const stats = [
+const defaultStats = [
   { value: '100+', label: 'Children Served' },
   { value: '20+', label: 'Volunteer Instructors' },
   { value: 'Free', label: 'Cost to All Families' },
@@ -59,6 +60,15 @@ const stats = [
 ]
 
 export default function HomePage() {
+  const cms = getPageContent('home')
+  const stats = ((cms.stats as { value: string; label: string }[]) ?? defaultStats)
+  const heroSubtitle = (cms.heroSubtitle as string) ?? 'Providing free cello lessons, instruments, and performance opportunities to underprivileged children across Dallas, Texas.'
+  const aboutTitle = (cms.aboutTitle as string) ?? 'Music for Every Child, Regardless of Means'
+  const aboutParagraph1 = (cms.aboutParagraph1 as string) ?? ''
+  const aboutParagraph2 = (cms.aboutParagraph2 as string) ?? ''
+  const donateCTATitle = (cms.donateCTATitle as string) ?? 'Your Generosity Changes Everything'
+  const donateCTAText = (cms.donateCTAText as string) ?? ''
+
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────────── */}
@@ -81,8 +91,7 @@ export default function HomePage() {
           </h1>
           <div className="w-20 h-px bg-gold mx-auto mb-8" />
           <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-12">
-            Providing free cello lessons, instruments, and performance opportunities
-            to underprivileged children across Dallas, Texas.
+            {heroSubtitle}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/about" className="btn-outline-white">
@@ -170,19 +179,11 @@ export default function HomePage() {
                 Our Story
               </p>
               <h2 className="section-title text-white mb-2">
-                Music for Every Child,<br /> Regardless of Means
+                {aboutTitle}
               </h2>
               <div className="gold-divider-left" />
-              <p className="text-white/75 leading-relaxed mb-5">
-                Access to quality music education can often be limited by socio-economic
-                factors, leaving many talented children unable to pursue their musical
-                potential. The Nadya's Music Bridge bridges this gap.
-              </p>
-              <p className="text-white/75 leading-relaxed mb-10">
-                Through free lessons, loaner instruments, workshop preparation, and
-                performance opportunities, we nurture not just musicians — but confident,
-                disciplined, and culturally enriched young people.
-              </p>
+              <p className="text-white/75 leading-relaxed mb-5">{aboutParagraph1}</p>
+              <p className="text-white/75 leading-relaxed mb-10">{aboutParagraph2}</p>
               <Link href="/about" className="btn-outline-white">
                 Learn More About Us
               </Link>
@@ -276,11 +277,10 @@ export default function HomePage() {
       <section className="bg-gold py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
-            Your Generosity Changes Everything
+            {donateCTATitle}
           </h2>
           <p className="text-white/85 text-lg mb-10 max-w-2xl mx-auto">
-            Every dollar you give provides a child with instruments, instruction, and the
-            confidence that comes from making music. 100% of donations go directly to programs.
+            {donateCTAText}
           </p>
           <Link href="/donate" className="btn-outline-white">
             Donate Today

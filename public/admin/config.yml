@@ -2,11 +2,11 @@ backend:
   name: git-gateway
   branch: main
 
-# Uploaded images go here (accessible at /images/uploads/...)
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
+  # ── NEWS POSTS ─────────────────────────────────────────────────────────
   - name: "posts"
     label: "News & Updates"
     folder: "content/posts"
@@ -16,5 +16,93 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Excerpt (shown in post cards)", name: "excerpt", widget: "text" }
-      - { label: "Cover Image", name: "coverImage", widget: "image", required: false, hint: "Optional. Appears in the news listing and at the top of the post." }
+      - { label: "Cover Image", name: "coverImage", widget: "image", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  # ── PAGE CONTENT ────────────────────────────────────────────────────────
+  - name: "page_content"
+    label: "Page Content"
+    files:
+
+      - name: "home"
+        label: "Home Page"
+        file: "content/pages/home.md"
+        fields:
+          - { label: "Hero Subtitle", name: "heroSubtitle", widget: "text", hint: "Text shown below the main heading on the home page." }
+          - { label: "About Section — Title", name: "aboutTitle", widget: "string" }
+          - { label: "About Section — Paragraph 1", name: "aboutParagraph1", widget: "text" }
+          - { label: "About Section — Paragraph 2", name: "aboutParagraph2", widget: "text" }
+          - label: "Impact Stats"
+            name: "stats"
+            widget: "list"
+            hint: "The four numbers shown in the stats section (e.g. 100+ Children Served)."
+            fields:
+              - { label: "Value (e.g. 100+)", name: "value", widget: "string" }
+              - { label: "Label (e.g. Children Served)", name: "label", widget: "string" }
+          - { label: "Donate CTA — Heading", name: "donateCTATitle", widget: "string" }
+          - { label: "Donate CTA — Body Text", name: "donateCTAText", widget: "text" }
+
+      - name: "about"
+        label: "About Page"
+        file: "content/pages/about.md"
+        fields:
+          - { label: "Hero Subtitle", name: "heroSubtitle", widget: "text" }
+          - { label: "Intro — Paragraph 1", name: "introParagraph1", widget: "text" }
+          - { label: "Intro — Paragraph 2", name: "introParagraph2", widget: "text" }
+          - { label: "Intro — Paragraph 3", name: "introParagraph3", widget: "text" }
+          - label: "Objectives"
+            name: "objectives"
+            widget: "list"
+            fields:
+              - { label: "Number (e.g. 01)", name: "number", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+          - label: "Methodology"
+            name: "methodology"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+          - label: "Future Plans"
+            name: "futurePlans"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+
+      - name: "programs"
+        label: "Programs Page"
+        file: "content/pages/programs.md"
+        fields:
+          - { label: "Hero Subtitle", name: "heroSubtitle", widget: "text" }
+          - label: "Programs"
+            name: "programs"
+            widget: "list"
+            hint: "Keep the same 4 programs in order — their images and icons are fixed."
+            fields:
+              - { label: "ID (do not change)", name: "id", widget: "string", hint: "lessons / instruments / workshops / performances" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "string" }
+              - { label: "Description — Paragraph 1", name: "paragraph1", widget: "text" }
+              - { label: "Description — Paragraph 2", name: "paragraph2", widget: "text" }
+              - label: "Highlights (bullet points)"
+                name: "highlights"
+                widget: "list"
+                field: { label: "Highlight", name: "item", widget: "string" }
+
+      - name: "donate"
+        label: "Donate Page"
+        file: "content/pages/donate.md"
+        fields:
+          - { label: "Hero Subtitle", name: "heroSubtitle", widget: "text" }
+          - { label: "Impact Text — Paragraph 1", name: "impactParagraph1", widget: "text" }
+          - { label: "Impact Text — Paragraph 2 (tax info)", name: "impactParagraph2", widget: "text" }
+
+      - name: "contact"
+        label: "Contact Page"
+        file: "content/pages/contact.md"
+        fields:
+          - { label: "Hero Subtitle", name: "heroSubtitle", widget: "text" }
+          - { label: "Intro Text", name: "introText", widget: "text" }
+          - { label: "Email Address", name: "email", widget: "string" }
+          - { label: "Location", name: "location", widget: "string" }

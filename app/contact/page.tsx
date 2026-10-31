@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import ContactForm from '@/components/ContactForm'
+import { getPageContent } from '@/lib/pages'
 
 export const metadata: Metadata = {
   title: 'Contact Us',
@@ -8,6 +9,12 @@ export const metadata: Metadata = {
 }
 
 export default function ContactPage() {
+  const cms = getPageContent('contact')
+  const heroSubtitle = (cms.heroSubtitle as string) ?? "Questions, enrollment inquiries, volunteering, instrument donations — we're here and happy to help."
+  const introText = (cms.introText as string) ?? "Whether you're a parent interested in enrolling a child, a musician who would like to volunteer, or a supporter who wants to help — please don't hesitate to reach out."
+  const email = (cms.email as string) ?? 'info@dycp.org'
+  const location = (cms.location as string) ?? 'Dallas, Texas'
+
   return (
     <>
       {/* ── PAGE HERO ─────────────────────────────────────────── */}
@@ -27,10 +34,7 @@ export default function ContactPage() {
           </p>
           <h1 className="section-title text-white text-5xl md:text-6xl mb-6">Contact Us</h1>
           <div className="w-16 h-px bg-gold mb-6" />
-          <p className="text-white/75 max-w-xl text-lg leading-relaxed">
-            Questions, enrollment inquiries, volunteering, instrument donations —
-            we&apos;re here and happy to help.
-          </p>
+          <p className="text-white/75 max-w-xl text-lg leading-relaxed">{heroSubtitle}</p>
         </div>
       </section>
 
@@ -45,11 +49,7 @@ export default function ContactPage() {
                   Get In Touch
                 </h2>
                 <div className="gold-divider-left" />
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  Whether you&apos;re a parent interested in enrolling a child, a musician
-                  who would like to volunteer, or a supporter who wants to help — please
-                  don&apos;t hesitate to reach out.
-                </p>
+                <p className="text-gray-600 text-sm leading-relaxed">{introText}</p>
               </div>
 
               {/* Contact details */}
@@ -63,10 +63,10 @@ export default function ContactPage() {
                   <div>
                     <p className="font-semibold text-navy text-sm mb-1">Email</p>
                     <a
-                  href="mailto:info@dycp.org"
-                  className="text-gray-600 text-sm hover:text-gold transition-colors"
-                >
-                  info@dycp.org
+                      href={`mailto:${email}`}
+                      className="text-gray-600 text-sm hover:text-gold transition-colors"
+                    >
+                      {email}
                     </a>
                   </div>
                 </div>
@@ -80,7 +80,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-semibold text-navy text-sm mb-1">Location</p>
-                    <p className="text-gray-600 text-sm">Dallas, Texas</p>
+                    <p className="text-gray-600 text-sm">{location}</p>
                   </div>
                 </div>
               </div>
