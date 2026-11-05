@@ -84,7 +84,7 @@ export default function HomePage() {
       >
         <div className="relative z-10 text-center max-w-4xl mx-auto px-6 pt-20">
           <p className="text-gold tracking-[0.35em] uppercase text-xs sm:text-sm font-medium mb-6">
-            Nadya's Music Bridge
+            Nadya's Music Project
           </p>
           <h1 className="font-serif font-bold text-5xl sm:text-6xl md:text-7xl leading-tight mb-6">
             Music Has the Power<br className="hidden sm:block" /> to Transform Lives

@@ -14,7 +14,7 @@ programs:
   - id: "instruments"
     title: "Instrument Loans"
     tagline: "Every child gets the tools they need"
-    paragraph1: "The cost of a cello — even a student-grade instrument — can be a significant financial barrier for many families. Nadya's Music Bridge eliminates this obstacle entirely by providing loaner cellos, bows, strings, rosin, and all necessary accessories to every participant at no cost."
+    paragraph1: "The cost of a cello — even a student-grade instrument — can be a significant financial barrier for many families. Nadya's Music Project eliminates this obstacle entirely by providing loaner cellos, bows, strings, rosin, and all necessary accessories to every participant at no cost."
     paragraph2: "Instruments are maintained and regularly serviced so that students are always playing on equipment that supports their growth. When a student outgrows their instrument, they are fitted with the next size up automatically."
     highlights:
       - "Full-size to 1/8 cellos for all ages"

@@ -38,7 +38,7 @@ export default function Nav() {
           <Link href="/" className="flex-shrink-0 group">
             <div className="flex flex-col leading-none">
               <span className="font-serif text-gold text-xl font-bold group-hover:text-gold-light transition-colors leading-tight">
-                Nadya's Music Bridge
+                Nadya's Music Project
               </span>
             </div>
           </Link>

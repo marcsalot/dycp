@@ -1,6 +1,6 @@
-# Nadya's Music Bridge — Website
+# Nadya's Music Project — Website
 
-A beautiful, mobile-first charity website for the Nadya's Music Bridge (NMB).
+A beautiful, mobile-first charity website for the Nadya's Music Project (NMP).
 
 **Stack:** Next.js 14 · Tailwind CSS · Decap CMS · Netlify (free hosting)
 
@@ -41,7 +41,7 @@ See `public/images/README.md` for full details and descriptions.
 ```bash
 git init
 git add .
-git commit -m "Initial commit — NMB website"
+git commit -m "Initial commit — NMP website"
 gh repo create dycp-website --public --source=. --push
 # Or use github.com to create the repo and follow the instructions
 ```
