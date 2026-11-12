@@ -19,15 +19,15 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Nadya's Music Project | Free Cello Education for All",
-    template: "%s | Nadya's Music Project",
+    default: "Nadya's Music Bridge | Free Cello Education for All",
+    template: "%s | Nadya's Music Bridge",
   },
   description:
-    "The Nadya's Music Project provides free cello lessons, instruments, and performance opportunities to underprivileged children in Dallas, TX.",
+    "The Nadya's Music Bridge provides free cello lessons, instruments, and performance opportunities to underprivileged children in Dallas, TX.",
   keywords:
-    'cello, music education, Dallas, underprivileged children, charity, nonprofit, NMP',
+    'cello, music education, Dallas, underprivileged children, charity, nonprofit, NMB',
   openGraph: {
-    title: "Nadya's Music Project",
+    title: "Nadya's Music Bridge",
     description:
       'Providing free cello education to underprivileged children in Dallas, TX.',
     type: 'website',

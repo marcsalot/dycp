@@ -5,7 +5,7 @@ import { getPageContent } from '@/lib/pages'
 export const metadata: Metadata = {
   title: 'About Us',
   description:
-    "Learn about Nadya's Music Project — our mission, methodology, and the dedicated team bringing free cello education to Dallas children.",
+    "Learn about Nadya's Music Bridge — our mission, methodology, and the dedicated team bringing free cello education to Dallas children.",
 }
 
 export default function AboutPage() {

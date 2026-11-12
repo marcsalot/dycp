@@ -4,7 +4,7 @@ import { getPageContent } from '@/lib/pages'
 export const metadata: Metadata = {
   title: 'Donate',
   description:
-    "Support the Nadya's Music Project. Your donation provides free cello lessons, instruments, and performance opportunities to underprivileged children in Dallas.",
+    "Support the Nadya's Music Bridge. Your donation provides free cello lessons, instruments, and performance opportunities to underprivileged children in Dallas.",
 }
 
 const uses = [
@@ -194,7 +194,7 @@ export default function DonatePage() {
                 title: 'Spread the Word',
                 description:
                   'Share our mission on social media, tell your friends, or nominate a child who would benefit from our programs.',
-                cta: 'Share NMP',
+                cta: 'Share NMB',
                 href: '/contact',
               },
             ].map((item) => (

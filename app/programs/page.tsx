@@ -5,7 +5,7 @@ import { getPageContent } from '@/lib/pages'
 export const metadata: Metadata = {
   title: 'Programs',
   description:
-    "Discover all Nadya's Music Project programs: free cello lessons, instrument loans, competition workshops, and performance opportunities for Dallas children.",
+    "Discover all Nadya's Music Bridge programs: free cello lessons, instrument loans, competition workshops, and performance opportunities for Dallas children.",
 }
 
 // Icons and images are fixed — only text comes from CMS

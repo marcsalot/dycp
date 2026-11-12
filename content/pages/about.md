@@ -1,6 +1,6 @@
 ---
 heroSubtitle: "A dedicated charity initiative bringing the transformative power of cello education to underprivileged children across Dallas, Texas."
-introParagraph1: "Access to quality music education can often be limited by socio-economic factors, leaving many talented children unable to pursue their musical potential. Nadya's Music Project was founded to bridge this gap."
+introParagraph1: "Access to quality music education can often be limited by socio-economic factors, leaving many talented children unable to pursue their musical potential. Nadya's Music Bridge was founded to bridge this gap."
 introParagraph2: "By providing free lessons, instrument rentals, strings, and access to experienced instructors, we give every child — regardless of their family's financial situation — the opportunity to discover and develop their musical gifts."
 introParagraph3: "We believe music education is not a luxury. It is a tool for personal development, cultural enrichment, and community building that every child deserves."
 objectives:
