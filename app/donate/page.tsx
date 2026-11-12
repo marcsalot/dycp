@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { getPageContent } from '@/lib/pages'
+import ZeffyEmbed from '@/components/ZeffyEmbed'
 
 export const metadata: Metadata = {
   title: 'Donate',
@@ -114,49 +115,7 @@ export default function DonatePage() {
                   Secure, fee-free giving powered by Zeffy
                 </p>
 
-                {/*
-                  ── ZEFFY EMBED ────────────────────────────────────────
-                  1. Go to zeffy.com and create a free nonprofit account
-                  2. Create a "Donation Form" campaign
-                  3. Copy the embed iframe code and replace the placeholder below
-                  ──────────────────────────────────────────────────────
-                */}
-                <div className="border-2 border-dashed border-gold/40 rounded-lg p-12 text-center bg-cream">
-                  <p className="text-gold font-serif text-lg font-semibold mb-2">
-                    Donation Form Goes Here
-                  </p>
-                  <p className="text-gray-500 text-sm mb-6">
-                    Create your free Zeffy account at{' '}
-                    <a
-                      href="https://www.zeffy.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-navy underline hover:text-gold transition-colors"
-                    >
-                      zeffy.com
-                    </a>
-                    , set up a donation form, then paste the iframe embed code here.
-                  </p>
-                  <p className="text-gray-400 text-xs font-mono bg-white border border-gray-200 rounded p-3">
-                    {`<iframe src="https://www.zeffy.com/embed/..." />`}
-                  </p>
-                </div>
-
-                {/* Fallback PayPal giving link */}
-                <div className="mt-6 pt-6 border-t border-gray-100 text-center">
-                  <p className="text-gray-400 text-xs mb-3">Also accept donations via</p>
-                  <a
-                    href="https://www.paypal.com/donate"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-navy transition-colors"
-                  >
-                    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M7.076 21.337H2.47a.641.641 0 01-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 00-.607-.541c-.013.076-.026.175-.041.254-.93 4.778-4.005 7.201-9.138 7.201h-2.19a.563.563 0 00-.556.479l-1.187 7.527h-.506l-.24 1.516a.56.56 0 00.554.647h3.882c.46 0 .85-.334.922-.788.06-.26.76-4.852.816-5.09a.932.932 0 01.923-.788h.58c3.76 0 6.705-1.528 7.565-5.946.36-1.847.174-3.388-.777-4.471z" />
-                    </svg>
-                    PayPal Giving Fund
-                  </a>
-                </div>
+                <ZeffyEmbed />
               </div>
             </div>
           </div>
